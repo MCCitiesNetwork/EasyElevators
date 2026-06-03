@@ -1,0 +1,10 @@
+name: EasyElevators
+version: '${version}'
+main: com.minecraftcitiesnetwork.easyelevators.EasyElevatorsPlugin
+api-version: '1.21'
+description: Jump up and down with iron block elevators.
+author: MinecraftCitiesNetwork
+permissions:
+  easyelevators.reload:
+    description: Allows reloading EasyElevators configuration.
+    default: op

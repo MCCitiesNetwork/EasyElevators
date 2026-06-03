@@ -1,0 +1,49 @@
+# EasyElevators
+# Messages use MiniMessage: https://docs.advntr.dev/minimessage/format.html
+
+elevator-material: minecraft:iron_block
+
+ignore-materials:
+  - minecraft:air
+  - minecraft:cave_air
+  - minecraft:void_air
+  - minecraft:light
+  - minecraft:torch
+  - minecraft:wall_torch
+  - minecraft:soul_torch
+  - minecraft:soul_wall_torch
+  - minecraft:redstone_torch
+  - minecraft:redstone_wall_torch
+  - minecraft:lever
+  - '#minecraft:buttons'
+  - '#minecraft:all_signs'
+
+disabled-worlds: []
+
+sounds:
+  up:
+    enabled: true
+    sound: minecraft:entity.experience_orb.pickup
+    pitch: 0.5
+    volume: 1.0
+    world: false
+  down:
+    enabled: true
+    sound: minecraft:entity.experience_orb.pickup
+    pitch: 1.0
+    volume: 1.0
+    world: false
+
+boss-bar:
+  enabled: true
+  color: RED
+  style: PROGRESS
+  message: '<yellow>Floor <floor> of <total_floors>'
+
+arrows:
+  enabled: true
+  current-floor: true
+  destination-floor: true
+  color-up: green
+  color-down: red
+  size: 2.0
