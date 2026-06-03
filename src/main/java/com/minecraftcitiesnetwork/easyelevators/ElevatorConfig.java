@@ -51,12 +51,12 @@ public final class ElevatorConfig {
     @Setting("arrows")
     public Arrows arrows = new Arrows();
 
-    private Material resolvedElevatorMaterial = Material.IRON_BLOCK;
-    private Set<Material> resolvedIgnoreMaterials = Set.of();
-    private BossBar.Color resolvedBossBarColor = BossBar.Color.RED;
-    private BossBar.Overlay resolvedBossBarOverlay = BossBar.Overlay.PROGRESS;
-    private ElevatorSound resolvedSoundUp;
-    private ElevatorSound resolvedSoundDown;
+    private transient Material resolvedElevatorMaterial = Material.IRON_BLOCK;
+    private transient Set<Material> resolvedIgnoreMaterials = Set.of();
+    private transient BossBar.Color resolvedBossBarColor = BossBar.Color.RED;
+    private transient BossBar.Overlay resolvedBossBarOverlay = BossBar.Overlay.PROGRESS;
+    private transient ElevatorSound resolvedSoundUp;
+    private transient ElevatorSound resolvedSoundDown;
 
     public void sanitize(Logger log) {
         Material material = resolveMaterial(elevatorMaterial, Material.IRON_BLOCK, "elevator-material", log);
