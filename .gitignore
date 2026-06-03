@@ -6,3 +6,4 @@
 build/
 out/
 run/
+.DS_Store
