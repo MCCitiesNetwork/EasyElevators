@@ -46,12 +46,10 @@ public final class ElevatorTravel {
 
     private Location toFloor(int floorBlockY) {
         World world = player.getWorld();
-        double fractional = origin.getY() - Math.floor(origin.getY());
-        double offset = fractional == 0.0 ? 0.0 : 1.0 - fractional;
         return new Location(
                 world,
                 column.x() + 0.5,
-                floorBlockY + 1.0 - offset,
+                floorBlockY + 1.0,
                 column.z() + 0.5,
                 origin.getYaw(),
                 origin.getPitch()
